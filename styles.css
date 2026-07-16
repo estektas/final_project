@@ -1,5 +1,17 @@
-.fodland-map {
+.Fodlan-Map {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    box-shadow:4px 4px 8px gray;
 }
+
+.image-container {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid gray;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
