@@ -197,3 +197,11 @@
     height: auto;
     border-radius: 10px;
 }
+
+.main-characters-desc {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
