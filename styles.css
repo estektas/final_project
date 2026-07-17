@@ -81,6 +81,18 @@
     margin-top: 20px;
 }
 
+.main-characters {
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    border:#2c3e50 1px solid;
+}
+
+.main-characters h2 {
+    margin-bottom: 12px;
+}
+
 .character-icon-link {
     display: inline-flex;
     flex-direction: column;
@@ -174,9 +186,14 @@
 }
 
 #byleth-portrait {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#dimitri-portrait {
     width: 700px;
     max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
-
