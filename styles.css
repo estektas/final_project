@@ -316,6 +316,17 @@
     display: block;
 }
 
+/* Gallery container to center multiple videos */
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin: 8px auto 24px auto;
+    max-width: 1200px;
+    padding: 6px;
+}
+
 @media (max-width: 800px) {
     .video-figure {
         width: 100%;
