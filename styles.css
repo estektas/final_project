@@ -15,6 +15,18 @@
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
 }
 
+.audio-figure {
+    text-align: center;
+    margin: 12px auto;
+    max-width: 900px;
+}
+
+.audio-caption {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 6px;
+}
+
 .dropdown-nav {
     max-width: 900px;
     margin: 20px auto;
