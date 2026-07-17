@@ -222,6 +222,12 @@
     border-radius: 10px;
 }
 
+#mercedes-portrait {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
 .main-characters-desc {
     max-width: 800px;
     margin: 0 auto 20px auto;
