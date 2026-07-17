@@ -75,6 +75,74 @@
     background: #fafafa;
 }
 
+.icon-link-card {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.character-icon-link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #bbb;
+    border-radius: 12px;
+    padding: 12px;
+    background: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.character-icon-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.character-icon-link img {
+    width: 140px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.character-icon-link span {
+    font-weight: bold;
+}
+
+.character-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    padding: 18px;
+    border-radius: 14px;
+    background: #fff;
+}
+
+.character-card img {
+    width: 220px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.character-card-text {
+    max-width: 600px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
 .spoilers summary {
     font-size: 1.1rem;
     font-weight: bold;
