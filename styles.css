@@ -84,7 +84,8 @@
 }
 
 .main-characters,
-.student-characters {
+.student-characters,
+.supporting-characters {
     max-width: 900px;
     margin: 20px auto;
     text-align: center;
@@ -94,7 +95,8 @@
 }
 
 .main-characters h2,
-.student-characters h2 {
+.student-characters h2,
+.supporting-characters h2 {
     margin-bottom: 12px;
 }
 
@@ -266,3 +268,13 @@
     line-height: 1.6;
     color: #555;
 }
+
+.supporting-characters-desc {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+
