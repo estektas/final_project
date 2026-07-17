@@ -15,6 +15,57 @@
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
 }
 
+.dropdown-nav {
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.dropdown-nav details {
+    background: #2c3e50;
+    border-radius: 10px;
+    color: #fff;
+    padding: 0;
+}
+
+.dropdown-nav summary {
+    cursor: pointer;
+    padding: 14px 18px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.dropdown-nav summary::-webkit-details-marker {
+    display: none;
+}
+
+.dropdown-nav summary::after {
+    content: "▼";
+    float: right;
+}
+
+.dropdown-nav details[open] summary::after {
+    content: "▲";
+}
+
+.dropdown-nav ul {
+    padding: 0 18px 16px;
+    margin: 0;
+    list-style: none;
+}
+
+.dropdown-nav li {
+    margin: 10px 0;
+}
+
+.dropdown-nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.dropdown-nav a:hover {
+    text-decoration: underline;
+}
+
 .spoilers {
     margin: 20px auto;
     padding: 15px;
