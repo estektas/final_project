@@ -15,3 +15,42 @@
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
 }
 
+.spoilers {
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 900px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    background: #fafafa;
+}
+
+.spoilers summary {
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    list-style: none;
+}
+
+.spoilers summary::-webkit-details-marker {
+    display: none;
+}
+
+.spoilers summary::before {
+    content: "▶ ";
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.spoilers[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.spoiler-content {
+    margin-top: 10px;
+}
+
+.spoilers hr {
+    margin: 16px 0;
+}
+
