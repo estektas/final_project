@@ -290,6 +290,43 @@
 }
 
 
+/* Image gallery: display images inline with captions */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin: 8px auto 24px auto;
+    max-width: 1200px;
+    padding: 6px;
+    border: 1px solid #000000;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
+.image-figure {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: top;
+    width: 320px;
+    margin: 12px;
+    gap: 6px;
+}
+
+.image-figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.image-caption {
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+    margin: 0;
+}
+
 /* Video figure: display videos inline with caption shown at the top */
 .video-figure {
     display: inline-flex;
@@ -330,6 +367,7 @@
 }
 
 @media (max-width: 800px) {
+    .image-figure,
     .video-figure {
         width: 100%;
         margin: 10px 0;
