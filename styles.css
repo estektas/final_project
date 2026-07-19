@@ -389,4 +389,31 @@
     margin: 0;
 }
 
+/* Center homepage title, video, and map */
+#home {
+    text-align: center;
+}
+
+#home h2,
+#home h3 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#home video {
+    display: block;
+    margin: 16px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+#home .Fodlan-Map,
+#home img[src*="Fodlan"] {
+    display: block;
+    margin: 12px auto;
+    max-width: 100%;
+    height: auto;
+}
+
 
