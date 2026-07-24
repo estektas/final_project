@@ -60,6 +60,42 @@
         <img src="img/gallery/Gallery6.png" alt="Female Byleth concept art">
         <figcaption class="image-caption">Female Byleth Concept Art</figcaption>
       </figure>
+      <figure class="image-figure concept-figure">
+        <img src="img/concept/AsheConcept.png" alt="Ashe concept art">
+        <figcaption class="image-caption">Ashe Concept Art</figcaption>
+      </figure>
+      <figure class="image-figure concept-figure">
+        <img src="img/concept/DimitriConcept.png" alt="Dimitri concept art">
+        <figcaption class="image-caption">Dimitri Concept Art</figcaption>
+      </figure>
+      <figure class="image-figure concept-figure">
+        <img src="img/concept/DedueConcept.png" alt="Dedue concept art">
+        <figcaption class="image-caption">Dedue Concept Art</figcaption>
+      </figure>
+      <figure class="image-figure concept-figure">
+        <img src="img/concept/FelixConcept.png" alt="Felix concept art">
+        <figcaption class="image-caption">Felix Concept Art</figcaption>
+      </figure>
+      <figure class="image-figure concept-figure">
+        <img src="img/concept/height.png" alt="Character Heights Concept Art">
+        <figcaption class="image-caption">Character Heights Concept Art</figcaption>
+      </figure>
+      <figure class="image-figure concept-figure">
+        <img src="img/concept/IngridConcept.png" alt="Ingrid concept art">
+        <figcaption class="image-caption">Ingrid Concept Art</figcaption>
+      </figure>
+      <figure class="image-figure concept-figure">
+        <img src="img/concept/MercedesConcept.png" alt="Mercedes concept art">
+        <figcaption class="image-caption">Mercedes Concept Art</figcaption>
+      </figure>
+      <figure class="image-figure concept-figure">
+        <img src="img/concept/SylvainConcept.png" alt="Sylvain concept art">
+        <figcaption class="image-caption">Sylvain Concept Art</figcaption>
+      </figure>
+       <figure class="image-figure concept-figure">
+        <img src="img/concept/SwordOfCreator.png" alt="Sword of Creator concept art">
+        <figcaption class="image-caption">Byleth's Sword of Creator Concept Art</figcaption>
+      </figure>
     </div>
     <hr>
     <h3>Videos</h3>
@@ -108,11 +144,60 @@
   <p>This website is an unofficial, non-commercial fan project created for educational purposes as part of a web design assignment. <i>Fire Emblem: Three Houses</i>, its characters, artwork, logos, music, and all related intellectual property are owned by Nintendo, Intelligent Systems, and their respective copyright holders. Character information and official game details have been compiled using publicly available resources, including Nintendo's official materials.</p>
 </footer>
 
+<div id="image-lightbox" class="lightbox" aria-hidden="true">
+  <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Close image preview">&times;</button>
+  <figure class="lightbox-figure">
+    <img id="lightbox-image" src="" alt="">
+    <figcaption id="lightbox-caption" class="lightbox-caption"></figcaption>
+  </figure>
+</div>
+
 <script>
   const bgAudio = document.getElementById('bg-audio');
   if (bgAudio) {
     bgAudio.volume = 0.2;
   }
+
+  const lightbox = document.getElementById('image-lightbox');
+  const lightboxImage = document.getElementById('lightbox-image');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+  const lightboxClose = document.getElementById('lightbox-close');
+  const galleryImages = document.querySelectorAll('.image-gallery img');
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    lightboxImage.src = '';
+    lightboxImage.alt = '';
+    lightboxCaption.textContent = '';
+  }
+
+  galleryImages.forEach((img) => {
+    img.addEventListener('click', () => {
+      const figure = img.closest('figure');
+      const caption = figure ? figure.querySelector('.image-caption') : null;
+
+      lightboxImage.src = img.src;
+      lightboxImage.alt = img.alt;
+      lightboxCaption.textContent = caption ? caption.textContent : img.alt;
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden', 'false');
+    });
+  });
+
+  lightboxClose.addEventListener('click', closeLightbox);
+
+  lightbox.addEventListener('click', (event) => {
+    if (event.target === lightbox) {
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && lightbox.classList.contains('open')) {
+      closeLightbox();
+    }
+  });
 </script>
 </body>
 </html>
