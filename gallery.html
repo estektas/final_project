@@ -21,7 +21,7 @@
   </nav>
   <main>
     <figure class="audio-figure">
-      <audio id="bg-audio" controls autoplay loop volume="0.3">
+      <audio id="bg-audio" controls autoplay loop>
         <source src="videos/Fire Emblem Three Houses The Color of Sunrise.mp3" type="audio/mpeg">
       </audio>
       <figcaption class="audio-caption">The Color of Sunrise — Fire Emblem: Three Houses (soundtrack)</figcaption>
@@ -102,6 +102,14 @@
  
 <footer class="site-footer">
   <p>This website is an unofficial, non-commercial fan project created for educational purposes as part of a web design assignment. <i>Fire Emblem: Three Houses</i>, its characters, artwork, logos, music, and all related intellectual property are owned by Nintendo, Intelligent Systems, and their respective copyright holders. Character information and official game details have been compiled using publicly available resources, including Nintendo's official materials.</p>
-</footer></body>
+</footer>
+
+<script>
+  const bgAudio = document.getElementById('bg-audio');
+  if (bgAudio) {
+    bgAudio.volume = 0.2;
+  }
+</script>
+</body>
 </html>
 
